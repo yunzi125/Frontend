@@ -5,6 +5,7 @@
     android:layout_height="fill_parent"
     android:clipToOutline="true"
     android:background="@drawable/some_id">
+
     <View
         android:id="@+id/back"
         android:layout_width="20dp"
@@ -48,21 +49,18 @@
         android:textColor="#999999"
         android:textSize="15dp" />
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="460dp"
         android:layout_marginTop="150dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
-
-        </LinearLayout>
-    </ScrollView>
     <Button
+        android:visibility="invisible"
         android:id="@+id/button_login"
         android:layout_width="350dp"
         android:layout_height="65dp"
@@ -75,4 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+
 </RelativeLayout>
