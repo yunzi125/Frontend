@@ -37,9 +37,8 @@
         android:background="@drawable/rectangle_line" />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -233,22 +232,21 @@
             android:text="저요에서 분석하여 찾은 유용한 정보를 받겠습니다."
             android:textColor="#999999CC"
             android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="620dp"
+            android:layout_marginBottom="15dp"
+            android:text="다음"
+            android:textSize="16sp"
+            app:backgroundTint="#0071BC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
     </RelativeLayout>
-
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="350dp"
-        android:layout_height="65dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="620dp"
-        android:layout_marginBottom="15dp"
-        android:text="다음"
-        android:textSize="16sp"
-        app:backgroundTint="#0071BC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
 
 
 </RelativeLayout>
