@@ -47,6 +47,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
+        android:id="@+id/linearLayout7"
         android:layout_width="409dp"
         android:layout_height="300dp"
         android:layout_marginBottom="360dp"
@@ -87,5 +88,21 @@
             android:hint="이메일을 입력하세요."
             android:inputType="textEmailAddress" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:text="보내기"
+        android:textSize="16sp"
+        app:backgroundTint="#0071BC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintVertical_bias="0.8" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
