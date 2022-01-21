@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/drawable/selector_custom_check.xml" value="0.3546875" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_chatlist.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login.xml" value="0.254981884057971" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login_findpw.xml" value="0.334375" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main.xml" value="0.334375" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main_search.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage_profile.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage_setting.xml" value="0.334375" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_signup.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_signup_region.xml" value="0.25" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_signup_terms.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_signup_work.xml" value="0.334375" />

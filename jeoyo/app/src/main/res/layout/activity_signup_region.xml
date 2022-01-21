@@ -60,7 +60,6 @@
     </LinearLayout>
 
     <Button
-        android:visibility="invisible"
         android:id="@+id/button_login"
         android:layout_width="350dp"
         android:layout_height="65dp"
@@ -69,6 +68,7 @@
         android:layout_marginBottom="15dp"
         android:text="다음"
         android:textSize="16sp"
+        android:visibility="invisible"
         app:backgroundTint="#0071BC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
