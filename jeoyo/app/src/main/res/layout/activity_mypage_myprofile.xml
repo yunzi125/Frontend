@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:id="@+id/linearLayout5"
@@ -32,21 +32,16 @@
             android:textColor="@color/black"
             android:textSize="19sp" />
 
-        <ImageView
-            android:id="@+id/chat"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="85dp"
-            app:srcCompat="@drawable/icChat" />
+            android:layout_marginLeft="115dp"
+            android:text="편집"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
 
-        <ImageView
-            android:id="@+id/liked"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            app:srcCompat="@drawable/liked" />
 
     </LinearLayout>
 
@@ -198,8 +193,5 @@
         <!-- 본인이력 부분은 java ListView로 구현 -->
 
     </LinearLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
