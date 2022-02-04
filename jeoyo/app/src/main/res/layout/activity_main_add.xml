@@ -1,6 +1,299 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/back"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/cancel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="22dp"
+        android:text="완료"
+        android:backgroundTint="#ff0000"
+        android:fontFamily="@font/nanumsqure"
+        android:textColor="#2C89C7"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsqure"
+        android:text="모집글 쓰기"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--모집분류 선택-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="모집 분류 선택"
+
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/arrow_right" />
+
+            <!--카테고리-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="카테고리"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/arrow_right" />
+
+            <!--모집 기간-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="155dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="모집 기간"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="155dp"
+                android:background="@drawable/arrow_right" />
+
+            <!--활동 빈도 선택-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="220dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="활동 빈도 선택"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/arrow_right" />
+
+            <!--팀원 수-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="285dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="팀원 수"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="◀"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="▶"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <CheckBox
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="340dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="인원 무관"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="320dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="▶"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="390dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="팀원 조건 선택"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="390dp"
+                android:background="@drawable/arrow_right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="455dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="제목"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="38dp"
+                android:background="@drawable/border_round2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="485dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="570dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="설명"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="250dp"
+                android:background="@drawable/border_round2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="605dp"
+                android:hint="이런 것들을 기재하면 도움이 돼요!\n\n-진행 및 방향성\n\n-우대사항\n\n-세부 룰"
+                android:textSize="15sp"
+                android:fontFamily="@font/nanumsqure"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="900dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="썸네일"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="930dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border_round2"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/nanumsqure"
+                    android:background="@drawable/thumnail"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:backgroundTint="#7D7575"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="(0/1)"
+                    android:fontFamily="@font/nanumsqure"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
