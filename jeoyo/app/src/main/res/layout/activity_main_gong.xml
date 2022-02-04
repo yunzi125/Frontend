@@ -1,6 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/arrow_left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nanumsqure"
+        android:text="공모전"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/search"
+        android:fontFamily="@font/nanumsqure"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_line" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:background="#F9F9F9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:checked="true"
+                    android:fontFamily="@font/nanumsqure"
+                    android:gravity="center"
+                    android:text="기획/아이디어"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="광고/마케팅"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio_text"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="문학/시나리오"
+                    android:textColor="@drawable/selector_radio_text" />
+
+                <RadioButton
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/selector_radio"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="영상/콘텐츠"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/selector_radio_text" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="#0071BC"
+        android:src="@drawable/pencil" />
+
+
+</RelativeLayout>

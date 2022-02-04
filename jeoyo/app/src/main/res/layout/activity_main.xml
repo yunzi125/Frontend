@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <View
         android:id="@+id/back"
         android:layout_width="40dp"
@@ -14,17 +15,16 @@
         android:background="@drawable/jeoyo_main_icon" />
     <!-- 이용약관 -->
     <View
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginLeft="360dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="23dp"
         android:background="@drawable/search"
         android:fontFamily="@font/nanumsqure"
         android:textColor="@color/black"
         android:textSize="19sp"
         android:textStyle="bold" />
 
-<<<<<<< HEAD
     <View
         android:id="@+id/rectangle_3"
         android:layout_width="wrap_content"
@@ -40,6 +40,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -50,120 +51,145 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/nanumsqure"
-                android:text="안녕하세요, @@@ 님!\n~~~를 확인해보세요."
+                android:text="안녕하세요,              님!\n~~~를 확인해보세요."
                 android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/nanumsqure"
+                android:text="\@@@"
+                android:textColor="#0071BC"
                 android:textSize="23dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="20dp">
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="공모전"
-                    android:textStyle="bold"
                     android:fontFamily="@font/nanumsqure"
+                    android:text="공모전"
                     android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
                 <View
-                    android:layout_marginLeft="290dp"
                     android:layout_width="20dp"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
+                    android:layout_marginLeft="290dp"
                     android:background="@drawable/arrow_right" />
 
-                </LinearLayout>
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="140dp">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
-                    <View
+
+                    <ImageView
                         android:layout_width="110dp"
                         android:layout_height="110dp"
-                        android:background="@drawable/border_round"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_round" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="구미를 기록하다"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
+                        android:text="구미를 기록하다"
                         android:textColor="@color/black"
                         android:textSize="17dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
+                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="20dp">
-                    <View
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
                         android:layout_width="110dp"
                         android:layout_height="110dp"
-                        android:background="@drawable/border_round"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_round" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="구미를 기록하다"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
+                        android:text="SK텔레콤 T 공..."
                         android:textColor="@color/black"
                         android:textSize="17dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
+                        android:text="신촌/홍대\n개발자"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="20dp">
-                    <View
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
                         android:layout_width="110dp"
                         android:layout_height="110dp"
-                        android:background="@drawable/border_round"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:background="@drawable/border_round" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="구미를 기록하다"
+                        android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
+                        android:text="오픈 인프라 개..."
                         android:textColor="@color/black"
                         android:textSize="17dp"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
+                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
                 </LinearLayout>
@@ -207,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_gravity="center"
@@ -240,7 +266,7 @@
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_gravity="center"
@@ -252,7 +278,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="구미를 기록하다"
+                        android:text="SK텔레콤 T 공..."
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -262,7 +288,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
+                        android:text="신촌/홍대\n개발자"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
                 </LinearLayout>
@@ -273,7 +299,7 @@
                     android:layout_marginLeft="20dp"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="110dp"
                         android:layout_height="110dp"
                         android:layout_gravity="center"
@@ -285,7 +311,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="구미를 기록하다"
+                        android:text="오픈 인프라 개..."
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -351,7 +377,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="구미를 기록하다"
+                        android:text="토익 900 달성"
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -361,7 +387,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
+                        android:text="신촌/홍대\n주1회"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
                 </LinearLayout>
@@ -384,7 +410,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="구미를 기록하다"
+                        android:text="JLPT N1 따기"
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -394,7 +420,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="신촌/홍대 주2회\n프론트엔드 2명"
+                        android:text="신촌/홍대\n주2회"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
                 </LinearLayout>
@@ -417,7 +443,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="구미를 기록하다"
+                        android:text="오픈 인프라 개..."
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -456,6 +482,7 @@
                     android:layout_marginLeft="268dp"
                     android:background="@drawable/arrow_right" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -479,8 +506,8 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="김유진"
                         android:gravity="center_horizontal"
+                        android:text="김유진"
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -488,9 +515,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:layout_gravity="center_horizontal"
                         android:text="신촌/홍대 \n프론트엔드"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
@@ -514,8 +541,8 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="김유진"
                         android:gravity="center_horizontal"
+                        android:text="김유진"
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -523,9 +550,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:layout_gravity="center_horizontal"
                         android:text="신촌/홍대 \n프론트엔드"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
@@ -549,8 +576,8 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:text="김유진"
                         android:gravity="center_horizontal"
+                        android:text="김유진"
                         android:textColor="@color/black"
                         android:textSize="17dp"
                         android:textStyle="bold" />
@@ -558,9 +585,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/nanumsqure"
-                        android:layout_gravity="center_horizontal"
                         android:text="신촌/홍대 \n프론트엔드"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
@@ -570,62 +597,6 @@
 
 
     </ScrollView>
-
-</RelativeLayout>
-=======
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginBottom="660dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="24dp"
-            android:src="@drawable/jeoyo_icon" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="290dp"
-            android:src="@drawable/search" />
-
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginBottom="660dp"
-        android:background="#EEEEEE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="1.0" />
-
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="안녕하세요, 김유림 님!      ~~~를 확인해보세요."
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
@@ -636,20 +607,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/btm_navi_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/btm_navi_menu">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1000dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="0dp"
-        android:layout_marginTop="28dp">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 
-    </LinearLayout>
+</RelativeLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> upstream/main
+
+

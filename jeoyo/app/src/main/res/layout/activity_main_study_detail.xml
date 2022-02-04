@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <View
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/arrow_left" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/liked"
+        android:fontFamily="@font/nanumsqure"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumsqure"
+            android:text="토익 900점 목표 스터디"
+            android:textColor="#0071BC"
+            android:textSize="23dp" />
+
+    </ScrollView>
+</RelativeLayout>
