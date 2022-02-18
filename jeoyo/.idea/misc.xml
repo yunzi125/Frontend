@@ -13,9 +13,10 @@
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_chat.xml" value="0.221875" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_chatlist.xml" value="0.2" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_home.xml" value="0.334375" />
-        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login.xml" value="0.254981884057971" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_home_gong.xml" value="0.25" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login2.xml" value="0.334375" />
-        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login_findpw.xml" value="0.334375" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_login_findpw.xml" value="0.25" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main_add.xml" value="0.30891950688905" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main_dae.xml" value="0.264" />
@@ -25,7 +26,7 @@
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main_search.xml" value="0.334375" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main_study.xml" value="0.264" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_main_study_detail.xml" value="0.264" />
-        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage.xml" value="0.334375" />
+        <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage.xml" value="0.2" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage_intmem.xml" value="0.221875" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage_intpro.xml" value="0.221875" />
         <entry key="..\:/CookAndroid/JEO-YO/MINE/jeoyo/app/src/main/res/layout/activity_mypage_myprofile.xml" value="0.221875" />

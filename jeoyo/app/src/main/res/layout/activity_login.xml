@@ -1,97 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible">
 
-    <EditText style="@style/borderRound"
+    <EditText
         android:id="@+id/emailText"
+        style="@style/borderRound"
         android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="5dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
         android:ems="10"
         android:hint="이메일"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/pwText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <EditText style="@style/borderRound"
+    <EditText
         android:id="@+id/pwText"
+        style="@style/borderRound"
         android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="283dp"
         android:ems="10"
         android:hint="비밀번호"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/button_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/emailText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/jeoyo_icon" />
 
     <Button
         android:id="@+id/button_login"
         android:layout_width="350dp"
         android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
         android:layout_marginBottom="15dp"
         android:text="로그인"
         android:textSize="16sp"
-        app:backgroundTint="#0071BC"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pwText" />
+        app:backgroundTint="#0071BC" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="250dp"
         android:layout_height="30dp"
-        android:layout_marginBottom="230dp"
-        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
         android:orientation="horizontal"
-        android:weightSum="2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:weightSum="2">
 
         <TextView
-            android:id="@+id/findPw"
+            android:id="@+id/findPwText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="비밀번호 찾기 "
-            android:textColor="#222222"/>
-
+            android:text="비밀번호 찾기"
+            android:textColor="#222222" />
         <TextView
             android:id="@+id/signUpText"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="회원가입 "
-            android:textColor="#222222"/>
+            android:text="회원가입"
+            android:textColor="#222222" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

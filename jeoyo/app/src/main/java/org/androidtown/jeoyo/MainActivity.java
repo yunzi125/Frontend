@@ -3,8 +3,10 @@ package org.androidtown.jeoyo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity
 
         //처음화면
         getSupportFragmentManager().beginTransaction().add(R.id.fragment_frame, new fragment_home()).commit(); //FrameLayout에 fragment.xml 띄우기
+
 
         // 바텀 네비게이션뷰 안의 아이템 설정
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -39,6 +42,17 @@ public class MainActivity extends AppCompatActivity
                         return true;
             }
         });
-    } }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Toast.makeText(getApplicationContext(), "로그아웃", Toast.LENGTH_SHORT).show();   //토스트 메시지
+        Intent intent = new Intent(getApplicationContext(), activity_login.class); //지금 액티비티에서 다른 액티비티로 이동하는 인텐트 설정
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);    //인텐트 플래그 설정
+        startActivity(intent);  //인텐트 이동
+        finish();   //현재 액티비티 종료
+    }
+}
 
 
