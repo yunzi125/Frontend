@@ -81,7 +81,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="비밀번호 찾기" />
+            android:text="비밀번호 찾기 "
+            android:textColor="#222222"/>
 
         <TextView
             android:id="@+id/signUpText"
@@ -89,7 +90,8 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="회원가입" />
+            android:text="회원가입 "
+            android:textColor="#222222"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
