@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,7 +20,8 @@
             android:layout_height="20dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
-            android:src="@drawable/arrow_back" />
+            android:src="@drawable/arrow_back"
+            android:id="@+id/back"/>
 
         <TextView
             android:id="@+id/findPw"
@@ -62,9 +63,8 @@
             android:id="@+id/textView3"
             android:layout_width="215dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="90dp"
             android:text="가입 당시 사용했던         이메일을 입력해주세요."
             android:textColor="@color/black"
             android:textSize="22sp" />
@@ -94,15 +94,10 @@
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
         android:text="보내기"
         android:textSize="16sp"
-        app:backgroundTint="#0071BC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-        app:layout_constraintVertical_bias="0.8" />
+        app:backgroundTint="#0071BC" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

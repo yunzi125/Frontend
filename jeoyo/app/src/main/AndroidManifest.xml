@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jeoyo">
         <activity
+            android:name=".activity_home_gong"
+            android:exported="false"
+            android:label="@string/title_activity_home_gong"
+            android:theme="@style/Theme.Jeoyo.NoActionBar" />
+        <activity
+            android:name=".activity_login_findpw"
+            android:exported="false"
+            android:label="activity_login_findpw"
+            android:theme="@style/Theme.Jeoyo.NoActionBar" />
+        <activity
             android:name=".TitleActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
