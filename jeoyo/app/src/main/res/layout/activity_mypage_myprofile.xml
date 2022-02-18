@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,11 +9,7 @@
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginBottom="660dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginBottom="660dp">
 
         <ImageView
             android:layout_width="20dp"
@@ -49,20 +45,14 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginBottom="660dp"
         android:background="#EEEEEE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginTop="70dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="1000dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="72dp"
         tools:layout_editor_absoluteX="1dp">
 
         <ImageView
@@ -91,7 +81,7 @@
             android:layout_marginTop="10dp"
             android:text="안녕하세요. 현재 대학교 3학년 재학중이고 IT 관련 프로젝트에 관심 많습니다. 게임 프로젝트 관심 있으니 편하게 연락주세용~!!"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <!-- 리니어 안에 아이콘이랑 메인 text 아래는 별개의 textView로 세부 사항 구현 -->
         <LinearLayout
@@ -194,4 +184,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

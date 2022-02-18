@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginBottom="660dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="70dp">
 
         <ImageView
             android:layout_width="20dp"
@@ -37,14 +32,8 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:layout_marginBottom="660dp"
-        android:background="#EEEEEE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        app:layout_constraintVertical_bias="1.0" />
+        android:layout_marginTop="72dp"
+        android:background="#EEEEEE" />
 
     <Switch
         android:id="@+id/switchChat"
@@ -52,9 +41,8 @@
         android:layout_height="70dp"
         android:text="채팅 알림"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="72dp"/>
 
     <Switch
         android:id="@+id/switchMarketing"
@@ -62,9 +50,8 @@
         android:layout_height="70dp"
         android:text="마케팅 수신"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchChat" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="142dp"/>
 
 
     <!-- 스위치가 아니라 토글로 변경하는게 더 나으면 아래 코드 사용하기
@@ -112,4 +99,4 @@
     </LinearLayout>
 -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
