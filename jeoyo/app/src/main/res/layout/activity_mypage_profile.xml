@@ -38,7 +38,7 @@
             android:layout_height="24dp"
             android:layout_gravity="center"
             android:layout_marginLeft="85dp"
-            app:srcCompat="@drawable/icChat" />
+            app:srcCompat="@drawable/chat" />
 
         <ImageView
             android:id="@+id/liked"
