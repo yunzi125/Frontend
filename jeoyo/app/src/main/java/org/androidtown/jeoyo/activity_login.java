@@ -29,11 +29,12 @@ public class activity_login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         Intent intent = getIntent();
 
-        Button button_login = findViewById(R.id.button_login);
-        button_login.setOnClickListener(new View.OnClickListener(){
+        Button login = (Button)findViewById(R.id.button_login);
+        login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
