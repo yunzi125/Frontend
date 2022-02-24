@@ -4,32 +4,36 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/signUp"
+    <LinearLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:gravity="center"
-        android:text="회원가입"
-        android:textColor="@color/black"
-        android:textSize="19sp"
-        app:layout_constraintBottom_toTopOf="@+id/line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/setAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="90dp"
+            android:text="오픈소스 라이선스"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+    </LinearLayout>
 
     <View
-        android:id="@+id/line"
+        android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="659dp"
-        android:background="@drawable/rectangle_line"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/signUp"
-        app:layout_constraintTop_toBottomOf="@+id/signUp" />
+        android:layout_height="2dp"
+        android:layout_marginBottom="660dp"
+        android:background="#EEEEEE"
+        android:layout_marginTop="70dp"/>
 
 
     <EditText
@@ -40,11 +44,7 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="이름"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
@@ -54,11 +54,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="인증 가능한 이메일 주소"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextNumber"
@@ -68,11 +64,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="인증번호"
-        android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -82,11 +74,7 @@
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="영문, 숫자를 포함하여 8-20자"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -96,26 +84,15 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="비밀번호 재확인"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/button_login"
         android:layout_width="350dp"
         android:layout_height="65dp"
-        android:layout_centerHorizontal="true"
         android:text="다음"
         android:textSize="16sp"
-        app:backgroundTint="#0071BC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.639" />
+        app:backgroundTint="#0071BC" />
 
     <TextView
         android:id="@+id/textView2"
@@ -123,13 +100,7 @@
         android:layout_height="wrap_content"
         android:text="인증"
         android:textColor="#0071BC"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -137,37 +108,18 @@
         android:layout_height="wrap_content"
         android:text="확인"
         android:textColor="#0071BC"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber"
-        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
-        app:layout_constraintTop_toTopOf="@+id/editTextNumber" />
+        android:textSize="18sp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="32dp"
         android:layout_height="28dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2"
-        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/eye_no" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="32dp"
         android:layout_height="28dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintHorizontal_bias="0.93"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/eye_yes" />
-
 
 </RelativeLayout>
