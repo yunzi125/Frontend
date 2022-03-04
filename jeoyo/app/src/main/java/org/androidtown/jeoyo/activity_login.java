@@ -23,7 +23,6 @@ public class activity_login extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityLoginBinding binding;
 
-
     public activity_login() {
     }
 
@@ -59,11 +58,13 @@ public class activity_login extends AppCompatActivity {
         signUpText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), fragment_signup_terms.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }
         });
+
+
 
     }
 
