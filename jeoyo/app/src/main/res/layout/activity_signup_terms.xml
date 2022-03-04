@@ -36,6 +36,7 @@
         android:layout_marginTop="60dp"
         android:background="@drawable/rectangle_line" />
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -46,7 +47,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="170dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="이용약관 동의"
@@ -58,8 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="145dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="170dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="(필수)"
@@ -72,7 +73,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="109dp"
+            android:layout_marginTop="170dp"
             android:gravity="top" />
 
         <TextView
@@ -81,37 +82,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="178dp"
+            android:layout_marginTop="215dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
-            android:text="개인정보처리방침"
-            android:textColor="#222222"
-            android:textSize="18dp" />
-
-
-        <!-- Rectangle 322 -->
-        <View
-            android:layout_width="360dp"
-            android:layout_height="1dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="206dp"
-            android:background="@drawable/rectangle_line" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="220dp"
-            android:layout_marginEnd="-211dp"
-            android:fontFamily="@font/nanumsqure"
-            android:gravity="top"
-            android:text="필수적 개인정보처리방침 동의"
+            android:text="개인 정보 수집 및 이용"
             android:textColor="#222222"
             android:textSize="18dp" />
 
@@ -121,14 +95,15 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="265dp"
-            android:layout_marginTop="219dp"
-            android:layout_marginEnd="-211dp"
+            android:layout_marginStart="216dp"
+            android:layout_marginLeft="216dp"
+            android:layout_marginTop="215dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="(필수)"
             android:textColor="#2C89C7"
             android:textSize="18dp" />
+
 
         <RadioButton
             android:layout_width="30dp"
@@ -136,7 +111,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="209dp"
+            android:layout_marginTop="215dp"
             android:gravity="top" />
 
         <TextView
@@ -145,77 +120,37 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="-211dp"
-            android:fontFamily="@font/nanumsqure"
-            android:gravity="top"
-            android:text="선택적 개인정보처리방침 동의"
-            android:textColor="#222222"
-            android:textSize="18dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="265dp"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="-211dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="260dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="(선택)"
             android:textColor="#9E9E9E"
             android:textSize="18dp" />
 
-        <RadioButton
-            android:layout_width="30dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="247dp"
-            android:gravity="top" />
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="310dp"
-            android:layout_marginEnd="-211dp"
+            android:layout_marginTop="260dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="마케팅 정보 수신"
             android:textColor="#222222"
             android:textSize="18dp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="165dp"
-            android:layout_marginTop="310dp"
-            android:layout_marginEnd="-211dp"
-            android:fontFamily="@font/nanumsqure"
-            android:gravity="top"
-            android:text="(선택)"
-            android:textColor="#9E9E9E"
-            android:textSize="18dp" />
-
         <RadioButton
             android:layout_width="30dp"
             android:layout_height="28dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="350dp"
-            android:layout_marginTop="307dp"
+            android:layout_marginTop="260dp"
             android:gravity="top" />
 
         <TextView
@@ -224,9 +159,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="340dp"
-            android:layout_marginEnd="-211dp"
+            android:layout_marginTop="290dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="저요에서 분석하여 찾은 유용한 정보를 받겠습니다."
@@ -246,6 +181,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="95dp"
+            android:fontFamily="@font/nanumsqure"
+            android:gravity="top"
+            android:text="간단한 약관 동의 후      저요를 시작해보세요"
+            android:textColor="#222222"
+            android:textSize="18dp" />
     </RelativeLayout>
 
 

@@ -1,5 +1,6 @@
 package org.androidtown.jeoyo;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,5 +16,9 @@ public class fragment_signup_terms extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.activity_signup_terms, container, false);
+        //button_login
+
+
+
     }
 }
