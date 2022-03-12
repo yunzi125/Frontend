@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jeoyo">
         <activity
-            android:name=".activity_home_gong"
+            android:name=".javaActivity.home_gong_activity"
             android:exported="false"
             android:label="@string/title_activity_home_gong"
             android:theme="@style/Theme.Jeoyo.NoActionBar" />
         <activity
-            android:name=".activity_login_findpw"
+            android:name=".javaActivity.login_findpw_activity"
             android:exported="false"
             android:label="activity_login_findpw"
             android:theme="@style/Theme.Jeoyo.NoActionBar" />
         <activity
-            android:name=".TitleActivity"
+            android:name=".javaActivity.TitleActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity_login"
+            android:name=".javaActivity.login_activity"
             android:exported="true"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.Jeoyo.NoActionBar">
@@ -41,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".javaActivity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -23,6 +23,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="55pt"
             android:text="회원가입"
+            android:textStyle="bold"
             android:fontFamily="@font/nanumsqure"
             android:textColor="@color/black"
             android:textSize="19sp" />
@@ -42,11 +43,11 @@
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="220dp"
-        android:fontFamily="@font/nanumsqure"
+        android:layout_marginTop="85pt"
         android:ems="10"
-        android:hint="이름"
-        android:inputType="textPersonName" />
+        android:hint="이메일을 입력하세요."
+        android:fontFamily="@font/nanumsqure"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -56,71 +57,64 @@
         android:layout_below="@+id/editTextTextPersonName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:fontFamily="@font/nanumsqure"
-        android:ems="10"
-        android:hint="영문, 숫자를 포함하여 8-20자"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        style="@style/borderRound"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/editTextTextPassword2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
         android:ems="10"
         android:fontFamily="@font/nanumsqure"
-        android:hint="비밀번호 재확인"
-        android:inputType="textPassword" />
+        android:hint="인증번호"
+        android:inputType="number" />
 
     <Button
         android:id="@+id/button_login"
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:text="다음"
-        android:fontFamily="@font/nanumsqure"
         android:textSize="16sp"
         android:layout_marginTop="600dp"
         android:layout_centerHorizontal="true"
         app:backgroundTint="#0071BC" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="32dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="310dp"
-        android:layout_marginLeft="335dp"
-        app:srcCompat="@drawable/eye_no" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94pt"
+        android:layout_marginLeft="140pt"
+        android:text="인증"
+        android:fontFamily="@font/nanumsqure"
+        android:textColor="#0071BC"
+        android:textSize="18sp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="32dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="385dp"
-        android:layout_marginLeft="335dp"
-        app:srcCompat="@drawable/eye_yes" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="140pt"
+        android:layout_marginTop="23pt"
+        android:text="확인"
+        android:fontFamily="@font/nanumsqure"
+        android:textColor="#0071BC"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="40pt"
+        android:layout_marginLeft="14pt"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50pt"
-        android:text="한국대학교"
+        android:text="학교 이메일을 사용하여     인증해주세요."
         android:fontFamily="@font/nanumsqure"
         android:textColor="#000000"
         android:textSize="19sp" />
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="wrap_content"
+        android:layout_width="100pt"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="14pt"
         android:layout_marginTop="64pt"
-        android:text="서비스ㅇㅇ 학과"
         android:fontFamily="@font/nanumsqure"
-        android:textColor="#000000"
+        android:text="해당 이메일로 인증 번호를 보내드려요."
+        android:textColor="#707070"
         android:textSize="14sp" />
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo;
+package org.androidtown.jeoyo.javaFragment;
 
 import android.os.Bundle;
 
@@ -8,7 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class fragment_chat extends Fragment {
+import org.androidtown.jeoyo.R;
+
+public class chat_fragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

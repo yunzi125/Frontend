@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo;
+package org.androidtown.jeoyo.javaFragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class fragment_home extends Fragment {
+import org.androidtown.jeoyo.R;
+import org.androidtown.jeoyo.javaActivity.home_gong_activity;
+
+public class home_fragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -24,7 +27,7 @@ public class fragment_home extends Fragment {
         gong_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), activity_home_gong.class);
+                Intent intent = new Intent(view.getContext(), home_gong_activity.class);
                 startActivity(intent);    //intent 에 명시된 액티비티로 이동
             }
         });

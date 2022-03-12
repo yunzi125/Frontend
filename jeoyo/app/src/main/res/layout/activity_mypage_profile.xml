@@ -24,7 +24,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="140dp"
+            android:fontFamily="@font/nanumsqure"
             android:text="프로필"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="19sp" />
 
@@ -74,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsqure"
             android:text="ㅇㅇㅇ"
             android:textColor="@color/black"
             android:textSize="19sp" />
@@ -84,6 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/nanumsqure"
             android:text="안녕하세요. 현재 대학교 3학년 재학중이고 IT 관련 프로젝트에 관심 많습니다. 게임 프로젝트 관심 있으니 편하게 연락주세용~!!"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -109,6 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nanumsqure"
                 android:text="성신여자대학교"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -119,6 +124,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
+            android:fontFamily="@font/nanumsqure"
             android:text="서비스디자인공학 전공"
             android:textSize="16sp" />
 
@@ -145,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nanumsqure"
                 android:text="서울"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -155,6 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
+            android:fontFamily="@font/nanumsqure"
             android:text="삼성-선릉 강남-논현 압구정-신사"
             android:textSize="16sp" />
 
@@ -180,6 +188,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nanumsqure"
                 android:text="UX/UI"
                 android:textColor="#808080"
                 android:textSize="16sp" />

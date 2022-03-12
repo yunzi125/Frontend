@@ -1,11 +1,12 @@
-package org.androidtown.jeoyo;
+package org.androidtown.jeoyo.javaActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.androidtown.jeoyo.R;
 
 public class TitleActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class TitleActivity extends AppCompatActivity {
             public void run()
             {
                 //new Intent(현재 context, 이동할 activity)
-                Intent intent = new Intent(getApplicationContext(), activity_login.class);
+                Intent intent = new Intent(getApplicationContext(), login_activity.class);
 
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
 

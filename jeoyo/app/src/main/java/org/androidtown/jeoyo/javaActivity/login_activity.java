@@ -1,9 +1,7 @@
-package org.androidtown.jeoyo;
+package org.androidtown.jeoyo.javaActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,19 +9,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
+import org.androidtown.jeoyo.R;
 import org.androidtown.jeoyo.databinding.ActivityLoginBinding;
 
-public class activity_login extends AppCompatActivity {
+public class login_activity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityLoginBinding binding;
 
-    public activity_login() {
+    public login_activity() {
     }
 
     @Override
@@ -49,7 +45,7 @@ public class activity_login extends AppCompatActivity {
         findPwText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), activity_login_findpw.class);
+                Intent intent = new Intent(getApplicationContext(), login_findpw_activity.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }
@@ -58,7 +54,7 @@ public class activity_login extends AppCompatActivity {
         signUpText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), fragment_signup_terms.class);
+                Intent intent = new Intent(getApplicationContext(), signup_terms_activity.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }

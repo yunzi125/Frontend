@@ -1,23 +1,21 @@
-package org.androidtown.jeoyo;
+package org.androidtown.jeoyo.javaActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import org.androidtown.jeoyo.R;
 import org.androidtown.jeoyo.databinding.ActivityHomeGongBinding;
 
-public class activity_home_gong extends AppCompatActivity {
+public class home_gong_activity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityHomeGongBinding binding;

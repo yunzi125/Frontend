@@ -21,7 +21,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal|top"
-        android:text="이용약관"
+        android:text="약관 동의"
         android:textStyle="bold"
         android:fontFamily="@font/nanumsqure"
         android:textColor="@color/black"
@@ -30,12 +30,11 @@
     <View
         android:id="@+id/rectangle_3"
         android:layout_width="wrap_content"
-        android:layout_height="1.5dp"
+        android:layout_height="2dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="60dp"
         android:background="@drawable/rectangle_line" />
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -52,29 +51,20 @@
             android:gravity="top"
             android:text="이용약관 동의"
             android:textColor="#222222"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="60pt"
             android:layout_marginTop="170dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="(필수)"
             android:textColor="#2C89C7"
-            android:textSize="18dp" />
-
-        <RadioButton
-            android:layout_width="30dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="170dp"
-            android:gravity="top" />
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -87,54 +77,33 @@
             android:gravity="top"
             android:text="개인 정보 수집 및 이용"
             android:textColor="#222222"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="216dp"
-            android:layout_marginLeft="216dp"
+            android:layout_marginLeft="83pt"
             android:layout_marginTop="215dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="(필수)"
             android:textColor="#2C89C7"
-            android:textSize="18dp" />
-
-
-        <RadioButton
-            android:layout_width="30dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="215dp"
-            android:gravity="top" />
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="170dp"
-            android:layout_marginLeft="170dp"
+            android:layout_marginLeft="68pt"
             android:layout_marginTop="260dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
             android:text="(선택)"
             android:textColor="#9E9E9E"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
             android:layout_marginStart="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="260dp"
@@ -142,16 +111,46 @@
             android:gravity="top"
             android:text="마케팅 정보 수신"
             android:textColor="#222222"
-            android:textSize="18dp" />
+            android:textSize="16dp" />
 
-        <RadioButton
-            android:layout_width="30dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="350dp"
-            android:layout_marginTop="260dp"
-            android:gravity="top" />
+            android:layout_marginTop="62dp">
+
+            <RadioButton
+                android:id="@+id/termrd01"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="108dp"
+                android:gravity="top" />
+
+            <RadioButton
+                android:id="@+id/termrd02"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="14dp"
+                android:gravity="top" />
+
+            <RadioButton
+                android:id="@+id/termrd03"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="14dp"
+                android:gravity="top" />
+
+        </RadioGroup>
 
         <TextView
             android:layout_width="wrap_content"
@@ -164,12 +163,12 @@
             android:layout_marginTop="290dp"
             android:fontFamily="@font/nanumsqure"
             android:gravity="top"
-            android:text="저요에서 분석하여 찾은 유용한 정보를 받겠습니다."
+            android:text="저요에서 찾은 유용한 정보를 받겠습니다."
             android:textColor="#999999CC"
             android:textSize="13dp" />
 
         <Button
-            android:id="@+id/button_login"
+            android:id="@+id/button_next"
             android:layout_width="350dp"
             android:layout_height="65dp"
             android:layout_centerHorizontal="true"
@@ -189,10 +188,11 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="95dp"
             android:fontFamily="@font/nanumsqure"
+
             android:gravity="top"
             android:text="간단한 약관 동의 후      저요를 시작해보세요"
             android:textColor="#222222"
-            android:textSize="18dp" />
+            android:textSize="19dp" />
     </RelativeLayout>
 
 
