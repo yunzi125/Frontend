@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.navigation.ui.AppBarConfiguration;
 
@@ -54,9 +55,10 @@ public class login_activity extends AppCompatActivity {
         signUpText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), signup_terms_activity.class);
-                startActivity(intent);	//intent 에 명시된 액티비티로 이동
-                finish();	//현재 액티비티 종료
+                Toast.makeText(getApplicationContext(), "재설정 링크가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), login_activity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

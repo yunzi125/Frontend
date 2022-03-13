@@ -49,6 +49,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".javaActivity.signup_terms_activity" android:exported="true"/>
+        <activity android:name=".javaActivity.signup_email_activity" android:exported="true"/>
+        <activity android:name=".javaActivity.signup_dept_activity" android:exported="true"/>
+        <activity android:name=".javaActivity.signup_activity" android:exported="true"/>
+        <!-- <activity android:name=".javaActivity.signup_email_activity"/> -->
     </application>
 
 </manifest>

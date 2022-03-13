@@ -49,7 +49,7 @@
         android:inputType="text" />
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/button_next"
         android:layout_width="350dp"
         android:layout_height="65dp"
         android:text="다음"
