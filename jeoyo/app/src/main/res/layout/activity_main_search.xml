@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id="@+id/back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/arrow_left" />
+
+    <View
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rectangle"/>
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="wrap_content"
+        android:layout_height="1.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_line" />
+
+    <View
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/search"
+        android:backgroundTint="#686868" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:fontFamily="@font/nanumsqure"
+        android:textSize="15dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/search_button"
+        android:layout_marginTop="16.7dp"
+        android:layout_marginLeft="350dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최근 검색어"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:fontFamily="@font/nanumsqure"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체삭제"
+            android:fontFamily="@font/nanumsqure"
+            android:textColor="#999999"
+            android:textSize="16dp"
+            android:layout_marginLeft="220dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</RelativeLayout>
