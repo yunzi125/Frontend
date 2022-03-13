@@ -6,5 +6,11 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/border_round</item>
     </style>
+    <style name="SpinnerDivideStyle" parent="android:style/Widget.ListView.DropDown">
+        <item name="android:divider">#F0F0F0</item> <!-- divider 색 -->
+    </style>
 
+    <style name="SpinnerTheme">
+        <item name="android:dropDownListViewStyle">@style/SpinnerDivideStyle</item>
+    </style>
 </resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">3buttonTest</string>
+    <string name="btn_daum">네이트 홈페이지 열기</string>
+    <string name="btn_119">911 응급전화 걸기</string>
+    <string name="btn_gallery">갤러리 열기</string>
+    <string name="btn_exit">끝내기</string>
+</resources>

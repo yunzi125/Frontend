@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<name>"배종욱"</name>
+<age>20</age>
+<university>"창원대학교"</university>
+<picture>
+  mine1.jpg mine2.jpg mine3.jpg</picture>
+<hardware>
+  <cpu>25</cpu>
+  <mainboard>10</mainboard>
+  <ram>6</ram></hardware>
+<vector>
+  1 2 3 4 5 6</vector>
+<Mat type_id="opencv-matrix">
+  <rows>2</rows>
+  <cols>3</cols>
+  <dt>i</dt>
+  <data>
+    1 2 3 4 5 6</data></Mat>
+<Point>
+  1.0500000000000000e+001 200.</Point>
+<Rect>
+  10 200 100 200</Rect>
+</opencv_storage>

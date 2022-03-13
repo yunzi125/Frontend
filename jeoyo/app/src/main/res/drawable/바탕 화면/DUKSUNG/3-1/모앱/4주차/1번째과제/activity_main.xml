@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditNum1"
+        android:layout_margin="10dp"
+        android:hint="숫자1" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditNum2"
+        android:layout_margin="10dp"
+        android:hint="숫자2" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnAdd"
+        android:layout_margin="10dp"
+        android:text="더하기" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnSub"
+        android:layout_margin="10dp"
+        android:text="빼기" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnMul"
+        android:layout_margin="10dp"
+        android:text="곱하기" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnDiv"
+        android:layout_margin="10dp"
+        android:text="나누기" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계산 결과 : "
+        android:layout_margin="10dp"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:id="@+id/tvResult"
+        />
+
+</LinearLayout>

@@ -64,7 +64,6 @@
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/selector_radio"
                     android:button="@null"
-                    android:checked="true"
                     android:fontFamily="@font/nanumsqure"
                     android:gravity="center"
                     android:text="기획/아이디어"
