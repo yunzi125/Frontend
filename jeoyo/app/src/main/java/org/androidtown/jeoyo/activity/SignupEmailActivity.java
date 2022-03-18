@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import org.androidtown.jeoyo.R;
 
-public class signup_email_activity extends Activity {
+public class SignupEmailActivity extends Activity {
 
     Button button_next;
 
@@ -33,7 +33,7 @@ public class signup_email_activity extends Activity {
                 } else {
                     Toast.makeText(getApplicationContext(), "인증 번호가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
                 }
-                Intent intent = new Intent(getApplicationContext(), signup_email_activity.class);
+                Intent intent = new Intent(getApplicationContext(), SignupEmailActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -42,7 +42,7 @@ public class signup_email_activity extends Activity {
         button_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), signup_dept_activity.class);
+                Intent intent = new Intent(getApplicationContext(), SignupDeptActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,9 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import org.androidtown.jeoyo.R;
-import org.androidtown.jeoyo.javaFragment.chat_fragment;
-import org.androidtown.jeoyo.javaFragment.home_fragment;
-import org.androidtown.jeoyo.javaFragment.mypage_fragment;
+import org.androidtown.jeoyo.fragment.ChatFragment;
+import org.androidtown.jeoyo.fragment.HomeFragment;
+import org.androidtown.jeoyo.fragment.MyPageFragment;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity
         bottomNavigationView = findViewById(R.id.bottomNavi);
 
         //처음화면
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_frame, new home_fragment()).commit(); //FrameLayout에 fragment.xml 띄우기
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_frame, new HomeFragment()).commit(); //FrameLayout에 fragment.xml 띄우기
 
         // 바텀 네비게이션뷰 안의 아이템 설정
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity
                 {
                     //item을 클릭시 id값을 가져와 FrameLayout에 fragment.xml띄우기
                     case R.id.tabChat:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, new chat_fragment()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, new ChatFragment()).commit();
                         break;
                     case R.id.tabMain:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, new home_fragment()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, new HomeFragment()).commit();
                         break;
                     case R.id.tabMypage:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, new mypage_fragment()).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_frame, new MyPageFragment()).commit();
                         break; }
                         return true;
             }
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity
     public void onBackPressed() {
         super.onBackPressed();
         Toast.makeText(getApplicationContext(), "로그아웃", Toast.LENGTH_SHORT).show();   //토스트 메시지
-        Intent intent = new Intent(getApplicationContext(), login_activity.class); //지금 액티비티에서 다른 액티비티로 이동하는 인텐트 설정
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class); //지금 액티비티에서 다른 액티비티로 이동하는 인텐트 설정
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);    //인텐트 플래그 설정
         startActivity(intent);  //인텐트 이동
         finish();   //현재 액티비티 종료

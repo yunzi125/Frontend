@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import androidx.navigation.ui.NavigationUI;
 import org.androidtown.jeoyo.R;
 import org.androidtown.jeoyo.databinding.ActivityHomeGongBinding;
 
-public class home_gong_activity extends AppCompatActivity {
+public class HomeGongActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityHomeGongBinding binding;

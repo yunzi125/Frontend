@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,12 +15,12 @@ import androidx.navigation.ui.AppBarConfiguration;
 import org.androidtown.jeoyo.R;
 import org.androidtown.jeoyo.databinding.ActivityLoginBinding;
 
-public class login_activity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityLoginBinding binding;
 
-    public login_activity() {
+    public LoginActivity() {
     }
 
     @Override
@@ -46,7 +46,7 @@ public class login_activity extends AppCompatActivity {
         findPwText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), login_findpw_activity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginFindPasswordActivity.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }
@@ -56,7 +56,7 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Toast.makeText(getApplicationContext(), "재설정 링크가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), login_activity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

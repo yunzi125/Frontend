@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import org.androidtown.jeoyo.R;
 
 //figma 0.1.1(이용약관)
-public class signup_terms_activity extends Activity {
+public class SignupTermsActivity extends Activity {
     RadioButton termrd01, termrd02, termrd03;
     RadioGroup radioGroup1;
     Button button_next;
@@ -33,7 +33,7 @@ public class signup_terms_activity extends Activity {
         button_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), signup_email_activity.class);
+                Intent intent = new Intent(getApplicationContext(), SignupEmailActivity.class);
                 startActivity(intent);
                 finish();
             }

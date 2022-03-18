@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaFragment;
+package org.androidtown.jeoyo.fragment;
 
 import android.os.Bundle;
 
@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import org.androidtown.jeoyo.R;
 
-public class mypage_fragment extends Fragment {
+public class MyPageFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

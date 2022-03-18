@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import org.androidtown.jeoyo.R;
 
 
-public class login_findpw_activity extends AppCompatActivity
+public class LoginFindPasswordActivity extends AppCompatActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class login_findpw_activity extends AppCompatActivity
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), login_activity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }
@@ -34,7 +34,7 @@ public class login_findpw_activity extends AppCompatActivity
             @Override
             public void onClick(View view){
                 Toast.makeText(getApplicationContext(), "재설정 링크가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(getApplicationContext(), login_activity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }

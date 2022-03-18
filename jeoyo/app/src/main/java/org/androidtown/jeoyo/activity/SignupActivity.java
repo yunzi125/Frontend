@@ -1,4 +1,4 @@
-package org.androidtown.jeoyo.javaActivity;
+package org.androidtown.jeoyo.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import org.androidtown.jeoyo.R;
 
-public class signup_activity extends Activity {
+public class SignupActivity extends Activity {
 
     Button button_next;
 
