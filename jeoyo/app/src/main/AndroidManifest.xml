@@ -10,38 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jeoyo">
         <activity
-            android:name=".javaActivity.home_gong_activity"
+            android:name=".activity.HomeGongActivity"
             android:exported="false"
             android:label="@string/title_activity_home_gong"
             android:theme="@style/Theme.Jeoyo.NoActionBar" />
         <activity
-            android:name=".javaActivity.login_findpw_activity"
+            android:name=".activity.LoginFindPasswordActivity"
             android:exported="false"
             android:label="activity_login_findpw"
             android:theme="@style/Theme.Jeoyo.NoActionBar" />
         <activity
-            android:name=".javaActivity.TitleActivity"
+            android:name=".activity.TitleActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".javaActivity.login_activity"
+            android:name=".activity.LoginActivity"
             android:exported="true"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.Jeoyo.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".javaActivity.MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,11 +41,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".javaActivity.signup_terms_activity" android:exported="true"/>
-        <activity android:name=".javaActivity.signup_email_activity" android:exported="true"/>
-        <activity android:name=".javaActivity.signup_dept_activity" android:exported="true"/>
-        <activity android:name=".javaActivity.signup_activity" android:exported="true"/>
-        <!-- <activity android:name=".javaActivity.signup_email_activity"/> -->
+        <activity android:name=".activity.SignupTermActivity" android:exported="true"/>
+        <activity android:name=".activity.SignupEmailActivity" android:exported="true"/>
+        <activity android:name=".activity.SignupDeptActivity" android:exported="true"/>
+        <activity android:name=".activity.SignupActivity" android:exported="true"/>
     </application>
 
 </manifest>
