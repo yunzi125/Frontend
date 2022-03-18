@@ -29,11 +29,11 @@ public class SignupEmailActivity extends Activity {
             public void onClick(View view){
                 String str=textView2.getText().toString();
                 if(textView2.length()==0){
-                    Toast.makeText(getApplicationContext(), "이메일을 다시 한 번 확인해주세요!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupEmailActivity.this, "이메일을 다시 한 번 확인해주세요!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "인증 번호가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignupEmailActivity.this, "인증 번호가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
                 }
-                Intent intent = new Intent(getApplicationContext(), SignupEmailActivity.class);
+                Intent intent = new Intent(SignupEmailActivity.this, SignupEmailActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -42,7 +42,7 @@ public class SignupEmailActivity extends Activity {
         button_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), SignupDeptActivity.class);
+                Intent intent = new Intent(SignupEmailActivity.this, SignupDeptActivity.class);
                 startActivity(intent);
                 finish();
             }

@@ -33,7 +33,7 @@ public class SignupTermsActivity extends Activity {
         button_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), SignupEmailActivity.class);
+                Intent intent = new Intent(SignupTermsActivity.this, SignupEmailActivity.class);
                 startActivity(intent);
                 finish();
             }

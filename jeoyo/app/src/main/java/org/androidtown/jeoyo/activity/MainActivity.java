@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Toast.makeText(getApplicationContext(), "로그아웃", Toast.LENGTH_SHORT).show();   //토스트 메시지
-        Intent intent = new Intent(getApplicationContext(), LoginActivity.class); //지금 액티비티에서 다른 액티비티로 이동하는 인텐트 설정
+        Toast.makeText(MainActivity.this, "로그아웃", Toast.LENGTH_SHORT).show();   //토스트 메시지
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class); //지금 액티비티에서 다른 액티비티로 이동하는 인텐트 설정
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);    //인텐트 플래그 설정
         startActivity(intent);  //인텐트 이동
         finish();   //현재 액티비티 종료

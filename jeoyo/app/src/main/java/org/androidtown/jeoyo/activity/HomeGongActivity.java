@@ -29,7 +29,7 @@ public class HomeGongActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(HomeGongActivity.this, MainActivity.class);
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
                 finish();	//현재 액티비티 종료
             }

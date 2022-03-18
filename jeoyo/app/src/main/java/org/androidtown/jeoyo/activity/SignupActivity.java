@@ -24,7 +24,7 @@ public class SignupActivity extends Activity {
         button_next.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //Intent intent = new Intent(getApplicationContext(), signup_region_activity.class);
+                //Intent intent = new Intent(SignupActivity.this, signup_region_activity.class);
                 startActivity(intent);
                 finish();
             }

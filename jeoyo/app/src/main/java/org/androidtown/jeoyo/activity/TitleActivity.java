@@ -25,7 +25,7 @@ public class TitleActivity extends AppCompatActivity {
             public void run()
             {
                 //new Intent(현재 context, 이동할 activity)
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(TitleActivity.this, LoginActivity.class);
 
                 startActivity(intent);	//intent 에 명시된 액티비티로 이동
 
