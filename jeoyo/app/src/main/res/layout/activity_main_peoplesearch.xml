@@ -71,7 +71,7 @@
         android:textStyle="bold" />
 
     <Spinner
-        android:theme="@style/spinner_style"
+        android:theme="@style/SpinnerTheme"
         android:layout_width="168dp"
         android:layout_height="36dp"
         android:layout_marginLeft="22dp"

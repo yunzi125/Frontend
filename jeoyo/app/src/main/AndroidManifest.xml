@@ -41,7 +41,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.SignupTermActivity" android:exported="true"/>
+        <activity android:name=".activity.SignupTermsActivity" android:exported="true"/>
         <activity android:name=".activity.SignupEmailActivity" android:exported="true"/>
         <activity android:name=".activity.SignupDeptActivity" android:exported="true"/>
         <activity android:name=".activity.SignupActivity" android:exported="true"/>
