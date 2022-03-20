@@ -55,8 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         signUpText.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Toast.makeText(LoginActivity.this, "재설정 링크가 포함된 메일이 발송되었어요.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
+                Intent intent = new Intent(LoginActivity.this, SignupTermsActivity.class);
                 startActivity(intent);
                 finish();
             }

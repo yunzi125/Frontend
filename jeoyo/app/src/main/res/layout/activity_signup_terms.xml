@@ -113,44 +113,39 @@
             android:textColor="#222222"
             android:textSize="16dp" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+        <RadioButton
+            android:id="@+id/termrd01"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="62dp">
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="165dp"
+            android:gravity="top"
+            android:onClick="onRadioButtonClicked"/>
 
-            <RadioButton
-                android:id="@+id/termrd01"
-                android:layout_width="30dp"
-                android:layout_height="28dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="350dp"
-                android:layout_marginTop="108dp"
-                android:gravity="top" />
+        <RadioButton
+            android:id="@+id/termrd02"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="210dp"
+            android:gravity="top"
+            android:onClick="onRadioButtonClicked"/>
 
-            <RadioButton
-                android:id="@+id/termrd02"
-                android:layout_width="30dp"
-                android:layout_height="28dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="350dp"
-                android:layout_marginTop="14dp"
-                android:gravity="top" />
-
-            <RadioButton
-                android:id="@+id/termrd03"
-                android:layout_width="30dp"
-                android:layout_height="28dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="350dp"
-                android:layout_marginTop="14dp"
-                android:gravity="top" />
-
-        </RadioGroup>
+        <RadioButton
+            android:id="@+id/termrd03"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="255dp"
+            android:gravity="top"
+            android:onClick="onRadioButtonClicked"/>
 
         <TextView
             android:layout_width="wrap_content"
